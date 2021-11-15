@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main class="main-body">
+		<div class="detalle">
+		   <div class="fotos">
+			  <img class= "fotoProducto" src="/img/<%= oneGame.console %>/<%= oneGame.image %> " alt="Foto de Producto">
+		   </div>
+			<div class="descripcion">
+				<h2> <%= oneGame.name %> </h2>
+				<h3> <%= oneGame.console %> </h3>
+				<p> <%= oneGame.description %> </p>
+				<p> <%= oneGame.price %> </p>
+				<div class="añadir">
+					<form action="" method="">         
+						<button class= "boton" type="button"><a href="/cart">Añadir al Carrito</a></button>
+					</form>        
+				</div>
+			</div>
+		</div>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

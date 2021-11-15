@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main class="main-body">
+		<div id="content-slider" class="control">
+			<div class="slider-wrap">
+
+			  	<!-- ===== Thumbnail ControlNav ======= -->
+			  	<input type="radio" id="input-1" name="i" >
+			  	<input type="radio" id="input-2" name="i" >
+			  	<input type="radio" id="input-3" name="i" >
+			  	<input type="radio" id="input-4" name="i" >
+
+			  	<nav class="slider-dot-control">
+					<label for="input-1" class="slider-dot"></label>
+					<label for="input-2" class="slider-dot"></label>
+					<label for="input-3" class="slider-dot"></label>
+					<label for="input-4" class="slider-dot"></label>
+				</nav>
+
+			  	<!-- =================================== -->
+				<nav class="slider-arrow-control">
+					<label for="input-1"></label>
+					<label for="input-2"></label>
+					<label for="input-3"></label>
+					<label for="input-4"></label>
+				</nav>
+			  	<!-- =================================== -->
+			  <!-- ===== IMages ======= -->
+
+				<div class="slider">
+					<div class="slider-inner">
+					<figure>
+						<figcaption class="slider-head">
+						<h2>The Last of Us</h2>
+						<a href="/detail">Buy</a>
+						</figcaption>
+						<img src=/img/slider/tlou.jpg alt="" id="i-1" class="slider-img">
+					</figure>
+
+					<figure>
+						<figcaption class="slider-head">
+						<h2>Warzone</h2>
+						<a href="/detail">Buy</a>
+						</figcaption>
+						<img src="/img/slider/warzone.jpg" alt="" id="i-2" class="slider-img">
+					</figure>
+
+					<figure>
+						<figcaption class="slider-head">
+						<h2>the Binding of Isaac</h2>
+						<a href="/detail">Buy</a>
+						</figcaption>
+						<img src="/img/slider/tboi.jpeg" alt="" id="i-3" class="slider-img">
+					</figure>
+
+					<figure>
+						<figcaption class="slider-head">
+						<h2>Battlefield</h2>
+						<a href="/detail">Buy</a>
+						</figcaption>
+						<img src="/img/slider/battlefield.jpeg" alt="" id="i-4" class="slider-img">
+					</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="consoles-navbar">
+			<div class="navBox">
+				<ul class="consoles">
+					<li class="menuBox"><a class="navItems" href="">Xbox</a>
+						<ul class="games xbox">
+							<% for(let i = 0; i < xbox.length -1; i++) { %> 
+							<li class="items">
+								<a href="/detail/<%= xbox[i].id %>">
+									<img class="displayMenuImg" src="/img/xbox/<%= xbox[i].image %> " alt=""> 
+									<p><%= xbox[i].name %></p>
+									<p><%= xbox[i].price %></p>
+								</a>
+							</li>
+							<% } %> 
+						</ul>
+					</li>
+					<li class="menuBox"><a class="navItems" href="">PlayStation</a>
+						<ul class="games play">
+							<% for(let i = 0; i < play.length -1; i++) { %> 
+								<li class="items">
+									<a href="/detail/<%= play[i].id %>">
+										<img class="displayMenuImg" src="/img/play/<%= play[i].image %> " alt=""> 
+										<p><%= play[i].name %></p>
+										<p><%= play[i].price %></p>
+									</a>
+								</li>
+								<% } %> 
+						</ul>
+					</li>
+					<li class="menuBox"><a class="navItems" href="">Nintendo</a>
+						<ul class="games nintendo">
+							<% for(let i = 0; i < nintendo.length; i++) { %> 
+								<li class="items">
+									<a href="/detail/<%= nintendo[i].id %>">
+										<img class="displayMenuImg" src="/img/nintendo/<%= nintendo[i].image %> " alt=""> 
+										<p><%= nintendo[i].name %></p>
+										<p><%= nintendo[i].price %></p>
+									</a>
+								</li>
+								<% } %> 
+						</ul>
+					</li>
+					<li class="menuBox"><a class="navItems" href="">Pc</a>
+						<ul class="games pc">
+							<li class="items">
+								<a href="/detail">
+									<img class="displayMenuImg" src="/img/pc/gtapc.jpeg" alt=""> 
+									<p>Grand Theft Auto V</p>
+									<p>60.99</p>
+								</a>
+							</li>
+							<li class="items">
+								<a href="/detail">
+									<img class="displayMenuImg" src="/img/pc/valorantpc.jpeg" alt=""> 
+									<p>Valorant</p>
+									<p>60.99</p>
+								</a>
+							</li>
+							<li class="items">
+								<a href="/detail">
+									<img class="displayMenuImg" src="/img/pc/warframepc.jpeg" alt=""> 
+									<p>Warframe</p>
+									<p>60.99</p>
+								</a>
+							</li>
+							<li class="items">
+								<a href="/detail">
+									<img class="displayMenuImg" src="/img/pc/wowpc.jpeg" alt=""> 
+									<p>World of Warcraft</p>
+									<p>60.99</p>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

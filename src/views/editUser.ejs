@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main class="main-body">
+		<div class="detalle">
+		   <div class="fotos">
+			  <img class= "fotoProducto" src="/img/<%= editUser.image %> " alt="Foto de Perfil">
+		   </div>
+			<div class="descripcion-edit">
+				<form action="/edit/<%= esitUser.id %>?_method=PUT" method="POST" class="create-form">
+					<div class="control-formulario">
+						<label>Nombre y apellido:</label>
+						<input type="text" name="name" class="control" required minlength="2" value=" <%= gameToEdit.name %> ">
+					</div>
+					<div class="control-formulario">
+						<label>Nombre de usuario:</label>
+						<input type="text" name="username" class="control" required minlength="2" value=" <%= gameToEdit.name %> ">
+					</div>
+					<div class="control-formulario">
+						<label>Fecha de nacimiento:</label>
+						<input type="date" name="birthday" class="control" required>
+					</div>
+					<div class="control-formulario">
+						<label>Contraseña:</label>
+						<textarea name="password" class="control" required> <%= gameToEdit.description %> </textarea>
+					</div>
+					<div class="control-formulario">
+						<label>Foto de perfil:</label>
+						<input type="file" name="image" accept=".jpg" class="control" required>
+					</div>
+					<button type="submit" class="form-button">Guardar</button>
+					<button type="reset" class="form-button">Borrar</button>
+				</form>
+				<form action="/delete/<%=editUser.id%>" method="POST">
+					<button type="submit">BORRAR</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

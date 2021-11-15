@@ -1,0 +1,16 @@
+[
+    {
+     "id": 1,
+     "nombre": "David Mejia",
+     "nombreUsuario": "Archery",
+     "fecha": "1995-07-05",
+     "generos": [
+      "Accion",
+      "RPG",
+      "Shooters",
+      "Aventura"
+     ],
+     "contra": "$2a$10$hFsro24MK7J28N.dm.Hey.NxtL/.ov1PatIYChYRJ8laIwq1ZzHma",
+     "image": "1636592831330_img.jpeg"
+    }
+   ]

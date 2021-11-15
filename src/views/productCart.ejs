@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main class="main-body">
+		<h3 class="titulo">Carrito de Compras</h3>
+		<TABLE BORDER class="tabla">
+			<TR>
+				<TD> </TD> 
+				<TD>Producto</TD> 
+				<TD>Precio</TD> 
+				<TD>Cantidad</TD> 
+				<TD>Total</TD>
+			</TR>
+			<TR>
+				<TD><img style="width:114px; height:190px;" src="/img/fotoProducto.jpg" alt="fotoProducto"></TD> 
+				<TD>The Last of Us Part II</TD> 
+				<TD>$100</TD> 
+				<TD>
+					<form action="" method="">
+						<label for="cant"></label>
+						<input type="number" name="cant" placeholder="1">
+				
+						
+						<button type="submit">Actualizar</button>
+					</form>
+				</TD>
+				<TD>$100</TD>
+			</TR>
+		</TABLE>
+		<h3 class="pagar">Pagar</h3>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

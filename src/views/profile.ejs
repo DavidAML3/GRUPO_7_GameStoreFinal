@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main>
+		<div>
+			<div>
+				<div class="create-form">
+					<h2 class="control">Hi <%= user.nombre %> </h2>
+					<img src="/img/avatars/<%= user.image %> ">
+					<br>
+					<br>
+					<div class="control">Tu nombre de usuario es: <%= user.nombreUsuario %> </div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

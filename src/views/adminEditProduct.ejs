@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main class="main-body">
+		<div class="detalle">
+		   <div class="fotos">
+			  <img class= "fotoProducto" src="/img/<%= gameToEdit.console %>/<%= gameToEdit.image %> " alt="Foto de Producto">
+		   </div>
+			<div class="descripcion-edit">
+				<form action="/edit/<%= gameToEdit.id %>?_method=PUT" method="POST" class="create-form" id"formEditProducts">
+					<div class="control-formulario">
+						<label>Nombre de juego:</label>
+						<input type="text" name="name" class="control" id="name" required minlength="2" value=" <%= gameToEdit.name %> ">
+					</div>
+					<div class="control-formulario">
+						<label>Plataforma:</label>
+						<% if ( gameToEdit.console == 'Xbox') { %>
+							<select name="console" id="console" required>
+								<option value="Xbox" selected>Xbox</option>
+								<option value="Play">PlayStation</option>
+								<option value="Nintendo">Nintendo</option>
+								<option value="PC">PC</option>
+							</select>
+						<% } else if ( gameToEdit.console == 'Play') { %>
+							<select name="console" id="console" required>
+								<option value="Xbox">Xbox</option>
+								<option value="Play" selected>PlayStation</option>
+								<option value="Nintendo">Nintendo</option>
+								<option value="PC">PC</option>
+							</select>
+						<% } else if ( gameToEdit.console == 'Nintendo') { %>
+							<select name="console" id="console" required>
+								<option value="Xbox">Xbox</option>
+								<option value="Play">PlayStation</option>
+								<option value="Nintendo" selected>Nintendo</option>
+								<option value="PC">PC</option>
+							</select>
+						<% } else { %>
+							<select name="console" id="console" required>
+								<option value="Xbox">Xbox</option>
+								<option value="Play">PlayStation</option>
+								<option value="Nintendo">Nintendo</option>
+								<option value="PC" selected>PC</option>
+							</select>
+						<% } %>
+					</div>
+					<div class="control-formulario">
+						<label>Precio:</label>
+						<input type="text" name="price" class="precio" id="price" required minlength="2" value="<%= gameToEdit.price %> ">
+					</div>
+					<div class="control-formulario">
+						<label>Descripcion:</label>
+						<textarea name="description" rows="10" cols="40" class="control" id="description" required> <%= gameToEdit.description %> </textarea>
+					</div>
+					<!-- <div class="control-formulario">
+						<label>Caratula:</label>
+						<input type="file" name="caratula" accept=".jpg" class="control" required>
+					</div> -->
+					<button type="submit" class="form-button">Guardar</button>
+					<button type="reset" class="form-button">Borrar</button>
+				</form>
+				<form action="/delete/<%=gameToEdit.id%>" method="POST">
+					<button type="submit">BORRAR</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

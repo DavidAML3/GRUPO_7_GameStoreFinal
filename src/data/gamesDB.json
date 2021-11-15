@@ -1,0 +1,128 @@
+[
+    {
+        "id":1,
+        "name":"The Witcher 3: Wild Hunt",
+        "description":"RPG and sequel to The Witcher 2 (2011), The Witcher 3 follows witcher Geralt of Rivia as he seeks out his former lover and his young subject while intermingling with the political workings of the wartorn Northern Kingdoms. Geralt has to fight monsters and deal with people of all sorts in order to solve complex problems and settle contentious disputes, each ranging from the personal to the world-changing.",
+        "console":"Play",
+        "price":"$59.99",
+        "image":"theWitcher3.jpeg",
+        "stock":72
+    },
+    {
+        "id":2,
+        "name":"Persona 5",
+        "description":"Persona 5, a turn-based JRPG with visual novel elements, follows a high school student with a criminal record for a crime he didn't commit. Soon he meets several characters who share similar fates to him, and discovers a metaphysical realm which allows him and his friends to channel their pent-up frustrations into becoming a group of vigilantes reveling in aesthetics and rebellion while fighting corruption.",
+        "console":"Play",
+        "price":"$79.99",
+        "image":"persona5.jpeg",
+        "stock":15
+    },
+    {
+        "id":3,
+        "name":"Grand Theft Auto V: Premium Online Edition",
+        "description":"The Grand Theft Auto V: Premium Online Edition includes the complete Grand Theft Auto V story experience, free access to the ever evolving Grand Theft Auto Online and all existing gameplay upgrades and content including The Doomsday Heist, Gunrunning, Smuggler’s Run, Bikers and much more. You’ll also get the Criminal Enterprise Starter Pack, the fastest way to jumpstart your criminal empire in Grand Theft Auto Online.",
+        "console":"Play",
+        "price":"$39.99",
+        "image":"gta5.jpeg",
+        "stock":45
+    },
+    {
+        "id":4,
+        "name":"The Last of Us Remastered",
+        "description":"Abandoned cities reclaimed by nature. A population decimated by a modern plague. Survivors are killing each other for food, weapons whatever they can get their hands on. Joel, a brutal survivor, and Ellie, a brave young teenage girl who is wise beyond her years, must work together if they hope to survive their journey across the US.",
+        "console":"Play",
+        "price":"$69.99",
+        "image":"tlouRemastered.jpeg",
+        "stock":30
+    },
+    {
+        "id":5,
+        "name":"God of War",
+        "description":"It is a new beginning for Kratos. Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology. With new purpose and his son at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...",
+        "console":"Play",
+        "price":"$89.99",
+        "image":"gow.jpeg",
+        "stock":52
+    },
+    {
+        "id":6,
+        "name":"Hitman: Game of the Year Edition",
+        "description":"Experiment and have fun in the ultimate playground as Agent 47 to become the master assassin. Travel around the globe to exotic locations and eliminate your targets with everything from a katana or a sniper rifle to an exploding golf ball or some expired spaghetti sauce.",
+        "console":"Xbox",
+        "price":"$19.99",
+        "image":"hitman.jpeg",
+        "stock":28
+    },
+    {
+        "id":7,
+        "name":"Red Dead Redemption 2",
+        "description":"Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland. The game's vast and atmospheric world will also provide the foundation for a brand new online multiplayer experience.",
+        "console":"Xbox",
+        "price":"$49.99",
+        "image":"rdr2.jpeg",
+        "stock":31
+    },
+    {
+        "id":8,
+        "name":"Dark Souls III",
+        "description":"As fires fade and the world falls into ruin, developer FROMSOFTWARE and director Hidetaka Miyazaki continue their critically-acclaimed and genre-defining series with Dark Souls III. Fans and newcomers alike will get lost in the games hallmark rewarding gameplay and immersive graphics. Now only embers remain…",
+        "console":"Xbox",
+        "price":"$79.99",
+        "image":"ds.jpeg",
+        "stock":27
+    },
+    {
+        "id":9,
+        "name":"Resident Evil 4: Ultimate HD Edition",
+        "description":"Resident Evil 4: Ultimate HD Edition is the second port of Resident Evil 4 to Windows, this time based on the Xbox 360 and PlayStation 3 versions with updated graphics. In contrast to the original port, this version features lighting effects, real-time instead of rendered cutscenes (except in the Separate Ways campaign), mouse support and Steamworks integration.",
+        "console":"Xbox",
+        "price":"$29.99",
+        "image":"re4Remastered.jpeg",
+        "stock":12
+    },
+    {
+        "id":10,
+        "name":"Mass Effect: Andromeda – Deluxe Recruit Edition",
+        "description":"Mass Effect: Andromeda – Deluxe Recruit Edition takes players on a mission to find a new home for humanity, in the Andromeda galaxy. As the Pathfinder, you lead humanity’s fight for survival. This edition includes the Turian Soldier and Asari Adept Multiplayer Recruit Packs which ensures you will join the battle well equipped with the Turian and Asari Multiplayer Characters and a selection of special weapons, items and boosts. The hope for humanity lies on your shoulders. You must ask yourself…How far will you go?",
+        "console":"Xbox",
+        "price":"$49.99",
+        "image":"meAndromeda.jpeg",
+        "stock":2
+    },
+    {
+        "id":11,
+        "name":"Xenoblade Chronicles 2",
+        "description":"As the giant beasts march toward death, the last hope is a scavenger named Rex—and Pyra, a living weapon known as a Blade. Can you find the fabled paradise she calls home? Command a group of Blades and lead them to countless strategic victories before the world ends.",
+        "console":"Nintendo",
+        "price":"$35.99",
+        "image":"xenoblade.jpeg",
+        "stock":4
+    },
+    {
+        "id":12,
+        "name":"The Legend of Zelda: Breath of the Wild",
+        "description":"In this 3D open-world entry in the Zelda series, Link is awakened from a deep slumber without his past memories in the post-apocalyptic Kingdom of Hyrule, and sets off on a journey to defeat the ancient evil Calamity Ganon. Link treks, climbs and glides through fields, forests and mountain ranges while meeting and helping friendly folk and defeating enemies in order to gather up the strength to face Ganon.",
+        "console":"Nintendo",
+        "price":"$23.99",
+        "image":"zelda.jpeg",
+        "stock":6
+    },
+    {
+        "id":13,
+        "name":"Bayonetta 2",
+        "description":"The witching hour strikes again. Brimming with intricate battles that take place in, on and all over epic set pieces, Bayonetta 2 finds our sassy heroine battling angels and demons in unearthly beautiful HD. You’re bound to love how it feels to string together combos with unimaginable weapons and to summon demons using Bayonetta’s Umbran Weave in this frantic stylized action game.",
+        "console":"Nintendo",
+        "price":"$55.99",
+        "image":"bayoneta.jpeg",
+        "stock":7
+    },
+    {
+        "id":14,
+        "name":"Bayonetta 2 test",
+        "description":"The witching hour strikes again. Brimming with intricate battles that take place in, on and all over epic set pieces, Bayonetta 2 finds our sassy heroine battling angels and demons in unearthly beautiful HD. You’re bound to love how it feels to string together combos with unimaginable weapons and to summon demons using Bayonetta’s Umbran Weave in this frantic stylized action game.",
+        "console":"Nintendo",
+        "price":"$55.99",
+        "image":"bayoneta.jpeg",
+        "stock":7
+    }
+]

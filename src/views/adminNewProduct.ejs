@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main>
+		<form action="/registrarse" method="POST" class="create-form" id="formNewProducts">
+			<div class="control-formulario">
+				<label>Nombre de juego:</label>
+				<input type="text" name="nombre" class="control" id="name" required minlength="2" placeholder="Nombre del juego">
+			</div>
+			<div class="control-formulario">
+				<label>Plataforma:</label>
+				<select name="consola" id="console" required>
+					<option value="0" selected disabled>Selecciona la plataforma</option>
+					<option value="1">Xbox</option>
+					<option value="2">PlayStation</option>
+					<option value="3">Nintendo</option>
+					<option value="4">PC</option>
+				</select>
+			</div>
+			<div class="control-formulario">
+				<label>Caratula:</label>
+				<input type="file" name="caratula" accept=".jpg" class="control" id="img" required>
+			</div>
+			<div class="control-formulario">
+				<label>Precio:</label>
+				<input type="text" name="precio" class="precio" id="price" required minlength="2" placeholder="$25.88">
+			</div>
+			<div class="control-formulario">
+				<label>Stock:</label>
+				<input type="text" name="stock" class="stock" id="stock" required minlength="2" placeholder="10">
+			</div>
+			<div class="control-formulario">
+				<label>Descripcion:</label>
+				<textarea name="descripcion" rows="10" cols="40" class="control" id="description" required>Escribe aquí la descripcion del videojuego</textarea>
+			</div>
+			<div class="control-formulario">
+				<label>Géneros del videojuego:</label>
+				<input type="checkbox" name="generos" id="generos" value="Accion">Acción
+				<input type="checkbox" name="generos" id="generos" value="Deportes">Deportes
+				<input type="checkbox" name="generos" id="generos" value="RPG">RPG
+				<input type="checkbox" name="generos" id="generos" value="Shooters">Shooters
+				<input type="checkbox" name="generos" id="generos" value="Aventura">Aventura
+				<input type="checkbox" name="generos" id="generos" value="Carreras">Carreras
+			</div>
+			<button type="submit" class="form-button">Guardar</button>
+			<button type="reset" class="form-button">Borrar</button>
+		</form>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>

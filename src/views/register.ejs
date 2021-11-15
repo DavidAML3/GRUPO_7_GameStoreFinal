@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+	<%- include('./partials/header')%>
+	<main>
+		<form action="/user/register" method="POST" class="create-form" id="formRegister" enctype="multipart/form-data">
+			<div class="control-formulario">
+				<label>Nombre y apellido:</label>
+				<input type="text" name="nombre" class="control" id="name" minlength="2">
+				<% if (locals.errors && errors.nombre) { %>
+					<div class="text-danger">
+						<%= errors.nombre.msg %> 
+					</div>
+				<% } %>
+			</div>
+			<div class="control-formulario">
+				<label>Nombre de usuari@:</label>
+				<input type="text" name="nombreUsuario" class="control" id="username" minlength="2">
+				<% if (locals.errors && errors.nombreUsuario) { %>
+					<div class="text-danger">
+						<%= errors.nombreUsuario.msg %> 
+					</div>
+				<% } %>
+			</div>
+			<div class="control-formulario">
+				<label>Fecha de nacimiento:</label>
+				<input type="date" name="fecha" class="control">
+				<% if (locals.errors && errors.fecha) { %>
+					<div class="text-danger">
+						<%= errors.fecha.msg %> 
+					</div>
+				<% } %>
+			</div>
+			<div class="control-formulario">
+				<label>Géneros de interes:</label>
+				<input type="checkbox" name="generos" value="Accion">Acción
+				<input type="checkbox" name="generos" value="Deportes">Deportes
+				<input type="checkbox" name="generos" value="RPG">RPG
+				<input type="checkbox" name="generos" value="Shooters">Shooters
+				<input type="checkbox" name="generos" value="Aventura">Aventura
+				<input type="checkbox" name="generos" value="Carreras">Carreras
+			</div>
+			<% if (locals.errors && errors.generos) { %>
+				<div class="text-danger">
+					<%= errors.generos.msg %> 
+				</div>
+			<% } %>
+			<div class="control-formulario">
+				<label>Foto del usuario:</label>
+				<input type="file" name="fotoUsuario" id="profileImg" accept=".jpg">
+				<% if (locals.errors && errors.fotoUsuario) { %>
+					<div class="text-danger">
+						<%= errors.fotoUsuario.msg %> 
+					</div>
+				<% } %>
+			</div>
+	<div class="control-formulario">
+				<label>Contraseña:</label>
+				<input type="password" name="contra" class="control" id="password">
+				<% if (locals.errors && errors.contra) { %>
+					<div class="text-danger">
+						<%= errors.contra.msg %> 
+					</div>
+				<% } %>
+			</div>
+			<button type="submit" class="form-button">Guardar</button>
+			<button type="reset" class="form-button">Borrar</button>
+		</form>
+	</main>
+	<%- include('./partials/footer')%>
+</body>
+</html>
