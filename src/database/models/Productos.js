@@ -2,14 +2,14 @@ module.exports = (sequelize, DataTypes) => {
 
 const Productos = sequelize.define("Productos", {
     id: {
-        type: sequelize.INTEGER,
+        type: DataTypes.INTEGER,
         primaryKey: true
     },
     name: {
-        type: DataTypes.VARCHAR(100)
+        type: DataTypes.STRING(100)
     },
     description: {
-        type: DataTypes.VARCHAR(200)
+        type: DataTypes.STRING(200)
     },
     price: {
         type: DataTypes.FLOAT
@@ -18,13 +18,13 @@ const Productos = sequelize.define("Productos", {
         type: DataTypes.INTEGER
     },
     console_name: {
-        type: DataTypes.VARCHAR(20)
+        type: DataTypes.STRING(20)
     },
     image: {
-        type: DataTypes.VARCHAR(100)
+        type: DataTypes.STRING(100)
     },
     generos: {
-        type: DataTypes.VARCHAR(200)
+        type: DataTypes.STRING(200)
     }
 }, {
     tablename: "productos",

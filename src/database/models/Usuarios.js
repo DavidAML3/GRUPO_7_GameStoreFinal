@@ -52,30 +52,30 @@ const User = {
 }
 
 
-module.export = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
 
     const Usuarios = sequelize.define("Usuarios", {
         id: {
-            type: sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true
         },
         name: {
-            type: DataTypes.VARCHAR(20)
+            type: DataTypes.STRING(20)
         },
         username: {
-            type: DataTypes.VARCHAR(20)
+            type: DataTypes.STRING(20)
         },
         password: {
-            type: DataTypes.VARCHAR(20)
+            type: DataTypes.STRING(20)
         },
         image: {
-            type: DataTypes.VARCHAR(100)
+            type: DataTypes.STRING(100)
         },
         birthday: {
             type: DataTypes.DATE
         },
         generosInteres: {
-            type: DataTypes.VARCHAR(200)
+            type: DataTypes.STRING(200)
         },
         usuariosCategory_admin: {
             type: DataTypes.TINYINT
@@ -86,5 +86,3 @@ module.export = (sequelize, DataTypes) => {
     })
     return Usuarios;
 }
-
-module.exports = User;

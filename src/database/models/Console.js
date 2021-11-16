@@ -1,12 +1,12 @@
-module.export = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
 
     const Console = sequelize.define("Console", {
         idConsole: {
-            type: sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey:true
         },
         name: {
-            type: DataTypes.VARCHAR(20),
+            type: DataTypes.STRING(20),
         }
     }, {
         tablename: "console",
